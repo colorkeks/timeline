@@ -1,0 +1,46 @@
+<%- model_class = TimeItem -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
+      <th><%= model_class.human_attribute_name(:start_date) %></th>
+      <th><%= model_class.human_attribute_name(:end_date) %></th>
+      <th><%= model_class.human_attribute_name(:high_threshold) %></th>
+      <th><%= model_class.human_attribute_name(:importance) %></th>
+      <th><%= model_class.human_attribute_name(:timeline_id) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @time_items.each do |time_item| %>
+      <tr>
+        <td><%= link_to time_item.id, time_item_path(time_item) %></td>
+        <td><%= time_item.title %></td>
+        <td><%= time_item.description %></td>
+        <td><%= time_item.start_date %></td>
+        <td><%= time_item.end_date %></td>
+        <td><%= time_item.high_threshold %></td>
+        <td><%= time_item.importance %></td>
+        <td><%= time_item.timeline_id %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_time_item_path(time_item), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      time_item_path(time_item),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_time_item_path,
+            :class => 'btn btn-primary' %>

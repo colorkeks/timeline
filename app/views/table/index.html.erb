@@ -1,0 +1,24 @@
+<%- model_class = Timeline -%>
+
+<div class="page-header">
+  <h1> Your TimeLines </h1>
+</div>
+<table class="table table-striped">
+  <tbody>
+    <% @timelines.each do |timeline| %>
+      <tr>
+        <td><%= timeline.title %></td>
+        <td><%= timeline.focus_date %></td>
+        <td><%= timeline.initial_zoom %></td>
+        <td>
+          <%= link_to t('.show', :default => t("helpers.links.show")),
+                      timeline_path(timeline), :class => 'btn btn-success' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_timeline_path,
+            :class => 'btn btn-primary' %>

@@ -1,0 +1,90 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<html lang='en'>
+<head>
+<meta charset="utf-8" />
+    <div class="container">
+        <div class="row">
+          <div class="span9">
+<!-- OPTIONALLY FOR CHECKBOX-STYLE LEGEND ITEMS 
+<link rel="stylesheet" href="css/tg_legend_checkboxes.css" type="text/css" media="screen" charset="utf-8">
+-->
+<style type='text/css'>
+    #p1 {
+      height:500px;
+    }
+    </style>
+</head>
+<body>
+
+<div id='p1'></div>
+
+
+<p></p>
+
+  <script type='text/javascript'>
+  
+   
+  $(function () { 
+  
+    var tg_instance = {};
+    
+
+
+    tg1 = $("#p1").timeline({
+
+        "min_zoom":14, 
+        "max_zoom":45, 
+        "icon_folder":"http://localhost:3000/icons/",
+        "data_source":"http://localhost:3000/timelines/<%=@timeline.id%>.json",
+        "show_footer":true,
+        "display_zoom_level":true,
+        "mousewheel":"zoom", // zoom | pan | none
+        "constrain_to_data":false,
+        "image_lane_height":100,
+        "legend":{type:"default"}, // default | checkboxes
+        "loaded":function () { 
+          // loaded callback function
+         }
+
+    })
+
+    
+    }); // end document-ready
+
+</script>
+
+            <%= bootstrap_flash %>
+          <%= yield %>
+        </div>
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+            <%= render partial: 'timelines/timeline', locals: {timeline: @timeline} if (@timeline and @timeline.title) %> 
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+  </div> <!-- /container -->
+</body>
+
+</html>
+
+
+<table class="table table-striped">
+ <tbody>
+  <strong>Time events:</strong>
+  <%= render(@timeline.time_items)%>
+  <%= render(@timeline.time_points)%>
+ </tbody>
+ <table>
+
+
+
+
+
+
+
+
