@@ -1,5 +1,5 @@
 <%- model_class = Timeline -%>
-
+<div class="container">
 <div class="page-header">
   <h1> Your TimeLines </h1>
 </div>
@@ -19,6 +19,17 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_timeline_path,
-            :class => 'btn btn-primary' %>
+<a data-toggle="modal" href="#Create_TimeLine" class="btn btn-primary" data-remote='false'>New</a>
+
+</div> <!-- /container -->
+
+<div id="Create_TimeLine" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="Create_TimeLine_label" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="Create_TimeLine_label">Creating TimeLine</h3>
+
+  </div>
+  <div class="modal-body">
+    <%= render :partial => 'timelines/form' %>
+  </div>
+</div>

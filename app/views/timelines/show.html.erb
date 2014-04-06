@@ -5,17 +5,38 @@
 <html lang='en'>
 <head>
 <meta charset="utf-8" />
-    <div class="container">
-        <div class="row">
-          <div class="span9">
+
 <!-- OPTIONALLY FOR CHECKBOX-STYLE LEGEND ITEMS 
 <link rel="stylesheet" href="css/tg_legend_checkboxes.css" type="text/css" media="screen" charset="utf-8">
 -->
 <style type='text/css'>
     #p1 {
-      height:500px;
+      height:520px;
     }
     </style>
+
+
+    <script type="text/javascript">
+
+        $(function(){
+
+            $("#extruderLeft").buildMbExtruder({
+                position:"left",
+                width:280,
+                extruderOpacity:.7,
+                hidePanelsOnClose:true,
+                accordionPanels:true,
+                onExtOpen:function(){},
+                onExtContentLoad:function(){$("#extruderLeft").openPanel();},
+                onExtClose:function(){}
+            });
+
+
+
+        });
+
+    </script>
+
 </head>
 <body>
 
@@ -43,7 +64,6 @@
         "display_zoom_level":true,
         "mousewheel":"zoom", // zoom | pan | none
         "constrain_to_data":false,
-        "image_lane_height":100,
         "legend":{type:"default"}, // default | checkboxes
         "loaded":function () { 
           // loaded callback function
@@ -56,30 +76,36 @@
 
 </script>
 
-            <%= bootstrap_flash %>
-          <%= yield %>
-        </div>
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-            <%= render partial: 'timelines/timeline', locals: {timeline: @timeline} if (@timeline and @timeline.title) %> 
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-      </div><!--/row-->
-  </div> <!-- /container -->
-</body>
+<div class="container">              
+  <table class="table table-striped">
+     <tbody>
+       <strong>Time events:</strong>
+       <%= render(@timeline.time_items)%>
+       <%= render(@timeline.time_points)%>
+     </tbody>
+  <table>
+</div> <!-- /container -->
 
+<div id="extruderLeft" class="a {title:'TimeLine'}" >
+  <h3>TimeLine Info</h3>
+    <%= render partial: 'timelines/timeline', locals: {timeline: @timeline} if (@timeline and @timeline.title) %>
+  <style type="text/css">
+    .extruder .text{
+                    background-color: white;
+                    color:black;
+                    padding:30px;
+                    padding-bottom:1000px;
+                    border-bottom:1px solid #333333;}
+  </style>
+</div>
+
+
+</body>
 </html>
 
 
-<table class="table table-striped">
- <tbody>
-  <strong>Time events:</strong>
-  <%= render(@timeline.time_items)%>
-  <%= render(@timeline.time_points)%>
- </tbody>
- <table>
+
+
 
 
 

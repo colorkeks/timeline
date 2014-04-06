@@ -114,8 +114,7 @@
 				+ "<div class='tg-scrim'></div>"
 				
 				
-				+ "<div class='timeglider-footer' id='tg-footer'>"
-				+ "<div class='timeglider-logo'></div>" 
+				+ "<div class='timeglider-footer' id='tg-footer'>" 
 				
 				+ "<div class='tg-footer-center'>"
 				+ "<div class='tg-prev tg-prevnext'><a>prev</a></div>"

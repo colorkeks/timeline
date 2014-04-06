@@ -33,5 +33,8 @@
 //= require timeglider/timeglider.timeline.widget.js
 //= require timeglider/timeglider.datepicker.js
 //= require js/jquery.jscrollpane.min.js
+//= require inc/jquery.hoverIntent.min.js
+//= require inc/jquery.mb.flipText.js
+//= require inc/mbExtruder.js
 //= require twitter/bootstrap
 //= require_tree .
