@@ -11,7 +11,7 @@
 -->
 <style type='text/css'>
     #p1 {
-      height:520px;
+      height:565px;
     }
     </style>
 
@@ -27,13 +27,32 @@
                 hidePanelsOnClose:true,
                 accordionPanels:true,
                 onExtOpen:function(){},
-                onExtContentLoad:function(){$("#extruderLeft").openPanel();},
+                onExtContentLoad:function(){$("#extruderLeft1").openPanel();},
                 onExtClose:function(){}
             });
 
 
 
         });
+
+
+        $(function(){
+
+            $("#extruderLeft1").buildMbExtruder({
+                position:"left",
+                width:380,
+                extruderOpacity:.7,
+                hidePanelsOnClose:true,
+                accordionPanels:true,
+                onExtOpen:function(){},
+                onExtContentLoad:function(){$("#extruderLeft1").openPanel();},
+                onExtClose:function(){}
+            });
+
+
+
+        });
+
 
     </script>
 
@@ -76,24 +95,32 @@
 
 </script>
 
-<div class="container">              
-  <table class="table table-striped">
-     <tbody>
-       <strong>Time events:</strong>
-       <%= render(@timeline.time_items)%>
-       <%= render(@timeline.time_points)%>
-     </tbody>
-  <table>
-</div> <!-- /container -->
 
 <div id="extruderLeft" class="a {title:'TimeLine'}" >
   <h3>TimeLine Info</h3>
-    <%= render partial: 'timelines/timeline', locals: {timeline: @timeline} if (@timeline and @timeline.title) %>
+    <%= render partial: 'timelines/timeline', locals: {timeline: @timeline} if (@timeline) %>
   <style type="text/css">
     .extruder .text{
                     background-color: white;
                     color:black;
                     padding:30px;
+                    padding-bottom:1000px;
+                    border-bottom:1px solid #333333;}
+  </style>
+</div>
+
+
+<div id="extruderLeft1" class="a {title:'Events'}" >
+  <h3>Events</h3>
+  <table class="table table-striped">
+       <%= render(@timeline.time_items)%>
+       <%= render(@timeline.time_points)%>
+  <table>
+  <style type="text/css">
+    .extruder .text{
+                    background-color: white;
+                    color:black;
+                    padding:20px;
                     padding-bottom:1000px;
                     border-bottom:1px solid #333333;}
   </style>

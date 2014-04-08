@@ -201,22 +201,6 @@
 }
 
 
-.tg-timeline-envelope .titleBar {
-	background-color:#726d62;
-	color:#FFF;
-	height:4px;
-	width:auto;
-	padding:0;
-	position:absolute;
-	left:0;
-	z-index:25;
-	cursor:ns-resize;
-	
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-
-}
 
 .tg-timeline-envelope .titleBar .timeline-title {
 	width:auto;
