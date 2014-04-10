@@ -2,32 +2,32 @@
 <p></p>
 
 <p>
-  <h4>Focus date:</h4>
+  <h4>Фокусировка:</h4>
   <%= timeline.focus_date %>
 </p>
 <p>
-  <h4>Initial zoom:</h4>
+  <h4>Зум:</h4>
   <%= timeline.initial_zoom %>
 </p>
 
 <div class="btn-group">
-<a class="btn dropdown-toggle" data-toggle="dropdown"> Time Line <span class="caret"></span></a>
+<a class="btn dropdown-toggle" data-toggle="dropdown"> Тайм Лайн <span class="caret"></span></a>
   <ul class="dropdown-menu">
 
-    <li><a data-toggle="modal" href="#Edit_Timeline" class="" data-remote='false'>Edit TimeLine</a></li>
+    <li><a data-toggle="modal" href="#Edit_Timeline" class="" data-remote='false'>Редактировать</a></li>
 
-    <li><%= link_to t('.Destroy Timeline', :default => t("helpers.links.Destroy_Timeline")), timeline_path(@timeline),
+    <li><%= link_to t('.Удалить', :default => t("helpers.links.Удалить")), timeline_path(@timeline),
               :method => 'delete',
-              :confirm => 'Are you sure ?',
+              :confirm => 'Вы уверены ?',
               :class => 'label label-important' %></li>
   </ul>
 </div>
 
 <div class="btn-group">
-<a class="btn dropdown-toggle" data-toggle="dropdown"> Events <span class="caret"></span></a>
+<a class="btn dropdown-toggle" data-toggle="dropdown"> События <span class="caret"></span></a>
   <ul class="dropdown-menu pull-right">
-    <li><a data-toggle="modal" href="#Add_Point" class="" data-remote='false'>Add P(Modal)</a></li>
-    <li><a data-toggle="modal" href="#Add_Item" class="" data-remote='false'>Add I(Modal)</a></li>
+    <li><a data-toggle="modal" href="#Add_Point" class="" data-remote='false'>Добавить Точку</a></li>
+    <li><a data-toggle="modal" href="#Add_Item" class="" data-remote='false'>Добавить Событие</a></li>
   </ul>
 </div>
 
@@ -36,7 +36,7 @@
  <div id="Edit_Timeline" class="modal hide fade" tabindex="10" role="dialog" aria-labelledby="Edit_Timeline_label" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3 id="Edit_Timeline_label">Editing Timeline</h3>
+    <h3 id="Edit_Timeline_label">Редактирование ТаймЛайна</h3>
   </div>
   <div class="modal-body">
     <%= render :partial => 'timelines/form' %>
@@ -47,7 +47,7 @@
 <div id="Add_Item" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Add_Item_label" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3 id="Add_Item_label">Adding Item</h3>
+    <h3 id="Add_Item_label">Добавление события</h3>
   </div>
   <div class="modal-body">
     <%= render :partial => 'time_items/form' %>
@@ -60,7 +60,7 @@
 <div id="Add_Point" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="Add_Point_label" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3 id="Add_Point_label">Adding Point</h3>
+    <h3 id="Add_Point_label">Добавление точки</h3>
 
   </div>
   <div class="modal-body">

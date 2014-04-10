@@ -1,18 +1,19 @@
 <%- model_class = TimePoint -%>
+<div class="container">
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <h1> События </h1>
 </div>
 <table class="table table-striped">
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
-      <th><%= model_class.human_attribute_name(:start_date) %></th>
-      <th><%= model_class.human_attribute_name(:high_threshold) %></th>
-      <th><%= model_class.human_attribute_name(:importance) %></th>
+      <th><%= model_class.human_attribute_name(:Заголовок) %></th>
+      <th><%= model_class.human_attribute_name(:Описание) %></th>
+      <th><%= model_class.human_attribute_name(:Дата_начала) %></th>
+      <th><%= model_class.human_attribute_name(:Максимальный_порог) %></th>
+      <th><%= model_class.human_attribute_name(:Важность) %></th>
       <th><%= model_class.human_attribute_name(:timeline_id) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <th><%=t '.Действия', :default => t("helpers.Действия") %></th>
     </tr>
   </thead>
   <tbody>
@@ -26,12 +27,12 @@
         <td><%= time_point.importance %></td>
         <td><%= time_point.timeline_id %></td>
         <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+          <%= link_to t('.редакт.', :default => t("helpers.links.редакт.")),
                       edit_time_point_path(time_point), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+          <%= link_to t('.удалить', :default => t("helpers.links.удалить")),
                       time_point_path(time_point),
                       :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Вы уверены ?')) },
                       :class => 'btn btn-mini btn-danger' %>
         </td>
       </tr>
@@ -39,6 +40,7 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
+<%= link_to t('.new', :default => t("helpers.links.Новый")),
             new_time_point_path,
             :class => 'btn btn-primary' %>
+<div>

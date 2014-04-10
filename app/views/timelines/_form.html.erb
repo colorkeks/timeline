@@ -1,18 +1,18 @@
 <%= form_for @timeline, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :title, :class => 'control-label' %>
+    <%= f.label :Заголовок, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :title, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :focus_date, :class => 'control-label' %>
+    <%= f.label :Фокусировка, :class => 'control-label' %>
     <div class="controls">
       <%= f.date_select :focus_date, :class => 'date_select' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :initial_zoom, :class => 'control-label' %>
+    <%= f.label :Зум, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :initial_zoom, :class => 'text_field' %>
     </div>

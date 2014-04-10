@@ -1,7 +1,7 @@
 <%- model_class = Timeline -%>
 <div class="container">
 <div class="page-header">
-  <h1> Your TimeLines </h1>
+  <h1> Ваши Тайм Лайны </h1>
 </div>
 <table class="table table-striped">
   <tbody>
@@ -11,7 +11,7 @@
         <td><%= timeline.focus_date %></td>
         <td><%= timeline.initial_zoom %></td>
         <td>
-          <%= link_to t('.show', :default => t("helpers.links.show")),
+          <%= link_to t('.Показать', :default => t("helpers.links.Показать")),
                       timeline_path(timeline), :class => 'btn btn-success' %>
         </td>
       </tr>
@@ -19,14 +19,14 @@
   </tbody>
 </table>
 
-<a data-toggle="modal" href="#Create_TimeLine" class="btn btn-primary" data-remote='false'>New</a>
+<a data-toggle="modal" href="#Create_TimeLine" class="btn btn-primary" data-remote='false'>Новый</a>
 
 </div> <!-- /container -->
 
 <div id="Create_TimeLine" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="Create_TimeLine_label" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3 id="Create_TimeLine_label">Creating TimeLine</h3>
+    <h3 id="Create_TimeLine_label">Создание Тайм Лайна</h3>
 
   </div>
   <div class="modal-body">

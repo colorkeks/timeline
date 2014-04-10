@@ -1,34 +1,34 @@
 <%= form_for @time_point, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :title, :class => 'control-label' %>
+    <%= f.label :Заголовок, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :title, :class => 'text_field' %>
     </div>
   </div>
 
   <div class="control-group">
-    <%= f.label :description, :class => 'control-label' %>
+    <%= f.label :Описание, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_area :description, :class => 'text_area' %>
     </div>
   </div>
 
   <div class="control-group">
-    <%= f.label :start_date, :class => 'control-label' %>
+    <%= f.label :Дата_начала, :class => 'control-label' %>
     <div class="controls">
       <%= f.date_select :start_date, :class => 'date_select' %>
     </div>
   </div>
 
   <div class="control-group">
-    <%= f.label :high_threshold, :class => 'control-label' %>
+    <%= f.label :Максимальный_порог, :class => 'control-label' %>
     <div class="controls">
       <%= f.number_field :high_threshold, :class => 'number_field' %>
     </div>
   </div>
 
   <div class="control-group">
-    <%= f.label :importance, :class => 'control-label' %>
+    <%= f.label :Важность, :class => 'control-label' %>
     <div class="controls">
       <%= f.number_field :importance, :class => 'number_field' %>
     </div>

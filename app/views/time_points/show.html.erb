@@ -4,28 +4,29 @@
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
+  <dt><strong><%= model_class.human_attribute_name(:Заголовок) %>:</strong></dt>
   <dd><%= @time_point.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dt><strong><%= model_class.human_attribute_name(:Описание) %>:</strong></dt>
   <dd><%= @time_point.description %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:start_date) %>:</strong></dt>
+  <dt><strong><%= model_class.human_attribute_name(:Дата_начала) %>:</strong></dt>
   <dd><%= @time_point.start_date %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:high_threshold) %>:</strong></dt>
+  <dt><strong><%= model_class.human_attribute_name(:Максимальный_порог) %>:</strong></dt>
   <dd><%= @time_point.high_threshold %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:importance) %>:</strong></dt>
+  <dt><strong><%= model_class.human_attribute_name(:Важность) %>:</strong></dt>
   <dd><%= @time_point.importance %></dd>
   <dt><strong><%= model_class.human_attribute_name(:timeline_id) %>:</strong></dt>
   <dd><%= @time_point.timeline_id %></dd>
 </dl>
 
 <div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
+  <%= link_to t('.назад', :default => t("helpers.links.назад")),
               time_points_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+  <%= link_to t('.Редакт.', :default => t("helpers.links.Редакт.")),
               edit_time_point_path(@time_point), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+  <%= link_to t('.Удалить', :default => t("helpers.links.Удалить")),
               time_point_path(@time_point),
               :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Вы уверены ?')) },
               :class => 'btn btn-danger' %>
 </div>
+
