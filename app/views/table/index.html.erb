@@ -1,8 +1,20 @@
 <%- model_class = Timeline -%>
 <div class="container">
 <div class="page-header">
-  <h1> Ваши Тайм Лайны </h1>
+  <h1> Список таймлайнов </h1>
 </div>
+
+<body>
+
+
+<%= form_tag table_path, method: :get, :class => "form-inline" do %>
+    <%= text_field_tag :title, params[:title] %>
+    <%= submit_tag "Поиск", :class => "btn btn-default" %> 
+    <a class="btn btn-default" href="/"><i class="icon-refresh "></i></a>
+<% end %>
+<p></p>
+
+
 <table class="table table-striped">
   <tbody>
     <% @timelines.each do |timeline| %>
@@ -11,15 +23,23 @@
         <td><%= timeline.focus_date %></td>
         <td><%= timeline.initial_zoom %></td>
         <td>
+          <div class='btn-group'>
           <%= link_to t('.Показать', :default => t("helpers.links.Показать")),
                       timeline_path(timeline), :class => 'btn btn-success' %>
+
+          <%= link_to t('.Удалить', :default => t("helpers.links.Удалить")), timeline_path(timeline),
+              :method => 'delete',
+              :data => { :confirm => 'Вы уверены ?' },
+              :class => 'btn btn-danger' %>
+          </div>
         </td>
       </tr>
     <% end %>
+
   </tbody>
 </table>
-
-<a data-toggle="modal" href="#Create_TimeLine" class="btn btn-primary" data-remote='false'>Новый</a>
+<a data-toggle="modal" href="#Create_TimeLine" class="btn btn-primary" data-remote='false'>Создать</a>
+<%= will_paginate @timelines %>
 
 </div> <!-- /container -->
 

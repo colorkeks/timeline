@@ -22,9 +22,9 @@ json.events  @timeline.all_items do |item|
   json.importance "#{item.importance}"
 
   if item.respond_to?(:end_date)
-    json.icon "triangle_orange.png" 
+    json.icon "event.png"
   else 
-    json.icon "circle_purple.png"
+    json.icon "flag.svg"
   end
 
 end

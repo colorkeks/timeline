@@ -117,9 +117,9 @@
 				+ "<div class='timeglider-footer' id='tg-footer'>" 
 				
 				+ "<div class='tg-footer-center'>"
-				+ "<div class='tg-prev tg-prevnext'><a>prev</a></div>"
+				+ "<div class='tg-prev tg-prevnext'><a>пред</a></div>"
 				+ "<div class='tg-date-display noselect'><div class='tg-date-display-arrow'></div><span></span></div>"
-				+ "<div class='tg-next tg-prevnext'><a>next</a></div>"
+				+ "<div class='tg-next tg-prevnext'><a>след</a></div>"
 				+ "</div>"
 				
 				+ "	<div class='tg-footer-buttons'>"

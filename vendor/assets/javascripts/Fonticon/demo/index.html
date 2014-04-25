@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	
+	<title>jQuery fontIconPicker</title>
+	
+	<!-- Demo style -->
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- jQuery -->
+	<script src="js/jquery-1.7.1.min.js"></script>
+	
+	<!-- icon picker -->
+	<script src="../jquery.fonticonpicker.min.js"></script>
+	<link rel="stylesheet" href="../grey-theme/jquery.fonticonpicker.min.css">
+	
+	<!-- Font -->
+	<link rel="stylesheet" href="fontello-7275ca86/css/fontello.css">
+	
+</head>
+<body>
+
+	<div id="main" class="container" role="main">
+
+
+		
+
+		
+		
+
+
+
+		
+
+		
+		<!-- Example 3 : Fontello JSON -->
+		<input type="text" name="myselect3" id="myselect3" value="icon-heart"></input>
+		<a href="" class="loadicons">Load icons from Fontello config.json file</a>
+
+<span class="title">HTML</span>
+<pre>&lt;input type=&quot;text&quot; name=&quot;mytext&quot; id=&quot;mytext&quot; value=&quot;icon-heart&quot;&gt;&lt;/input&gt;
+&lt;a href=&quot;#&quot; class=&quot;loadicons&quot;&gt;Load icons from Fontello config.json file&lt;/a&gt;</pre>
+
+<span class="title">JS</span>	
+<pre>var icons = [], myIconPicker = $('#mytext').fontIconPicker();
+
+$('loadicons').click(function (){
+    $.ajax({
+        url:         'config.json',
+        dataType:    'JSON'
+    }).done(function (r) {
+        $.each(r.glyphs, function (i,v) {
+            icons.push(r.css_prefix_text + v.css);
+        });
+        myIconPicker.setIcons(icons);
+    });
+});</pre>
+
+		
+	</div>
+	
+	<script type="text/javascript">
+	
+	
+	/**
+	 * Example 3: Source Fontello JSON
+	 */
+	var other_icons = [], $myIconPicker = $('#myselect3').fontIconPicker();
+	$('.loadicons').click(function () {
+		$.ajax({
+			url:		'fontello-7275ca86/config.json',
+			dataType:	'JSON'
+		}).done(function( response ) {
+			$.each( response.glyphs, function (i,v) {
+				other_icons.push( response.css_prefix_text + v.css );
+			});
+			setTimeout(function () {
+				$myIconPicker.setIcons(other_icons);
+			}, 1000);
+		});
+		$(this).fadeOut(300);
+		return false;
+	});
+	
+	/**
+	 * Example 4: Form validation
+	 */
+	var fieldtoval = $('#myselect4').fontIconPicker({
+		source: ['icon-heart', 'icon-lemon', 'icon-user', 'icon-tag']
+	});
+	$('#myform').submit(function () {
+		
+		$('span.error').remove();
+		
+		if (!fieldtoval.val()){
+			fieldtoval.after('<span class="error">Required</span>');
+		} else {
+			alert( fieldtoval.val() + ' has been selected!' );
+		}
+		
+		return false;
+		
+	});
+	
+	/**
+	 * Example 6: Change icon set on the fly
+	 */
+	var icons6 = ["icon-music", "icon-search", "icon-mail", "icon-mail-alt", "icon-heart", "icon-heart-empty", "icon-star", "icon-star-empty", "icon-star-half", "icon-star-half-alt", "icon-user", "icon-users", "icon-male", "icon-female", "icon-video", "icon-videocam", "icon-picture", "icon-camera", "icon-camera-alt", "icon-th-large", "icon-th", "icon-th-list", "icon-ok", "icon-ok-circled", "icon-ok-circled2", "icon-ok-squared", "icon-cancel", "icon-cancel-circled", "icon-cancel-circled2", "icon-plus", "icon-plus-circled", "icon-plus-squared", "icon-plus-squared-small", "icon-minus", "icon-minus-circled", "icon-minus-squared", "icon-minus-squared-alt", "icon-minus-squared-small", "icon-help", "icon-help-circled", "icon-info-circled", "icon-info", "icon-home", "icon-link", "icon-unlink", "icon-link-ext", "icon-link-ext-alt", "icon-attach", "icon-lock", "icon-lock-open", "icon-lock-open-alt", "icon-pin", "icon-eye", "icon-eye-off", "icon-tag", "icon-tags", "icon-bookmark", "icon-bookmark-empty", "icon-flag", "icon-flag-empty", "icon-flag-checkered", "icon-thumbs-up", "icon-thumbs-down", "icon-thumbs-up-alt", "icon-thumbs-down-alt", "icon-download", "icon-upload", "icon-download-cloud", "icon-upload-cloud", "icon-reply", "icon-reply-all", "icon-forward", "icon-quote-left", "icon-quote-right", "icon-code", "icon-export", "icon-export-alt", "icon-pencil", "icon-pencil-squared", "icon-edit", "icon-print", "icon-retweet", "icon-keyboard", "icon-gamepad", "icon-comment", "icon-chat", "icon-comment-empty", "icon-chat-empty", "icon-bell", "icon-bell-alt"],
+		example6 = $('#example6').fontIconPicker({
+		emptyIcon: false,
+		source: icons6,
+		iconsPerPage: 30
+	});
+	
+	$('.all').click(function () {
+		example6.setIcons(icons6);
+		return false;
+	});
+	
+	$('.filter1').click(function () {
+		var iconstest1 = ['icon-heart', 'icon-lemon', "icon-upload-cloud", "icon-reply", "icon-code"];
+		example6.setIcons(iconstest1);
+		return false;
+	});
+	
+	$('.filter2').click(function () {
+		var iconstest2 = ['icon-user', 'icon-tag', "icon-star", "icon-star-empty", "icon-comment" ];
+		example6.setIcons(iconstest2);
+		return false;
+	});
+	
+	/**
+	 * Example 7: Trigger event on icon change
+	 */
+	$('#example7').fontIconPicker({
+		source: ['icon-heart', 'icon-lemon', 'icon-user', 'icon-tag']
+	}).change(function () {
+		if ( $(this).val() ){
+			$('.current_icon').html('Current icon is <i class="' + $(this).val() + '"></i>');
+		} else {
+			$('.current_icon').text('No icon selected');
+		}
+	});
+	</script>
+	
+</body>
+</html>

@@ -37,4 +37,18 @@
 //= require inc/jquery.mb.flipText.js
 //= require inc/mbExtruder.js
 //= require twitter/bootstrap
+//= require bootstrap-datepicker
+//= require Fonticon/jquery.fonticonpicker.min.js
 //= require_tree .
+
+
+$(document).on("focus", "[data-behaviour~='datepicker']", function(e){
+    $(this).datepicker({
+    	"format": "yyyy-mm-dd",
+    	"weekStart": 1,
+    	"autoclose": false,
+    	language: "ru"
+    })
+});
+
+

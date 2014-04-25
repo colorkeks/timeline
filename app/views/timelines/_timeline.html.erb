@@ -9,9 +9,9 @@
   <h4>Зум:</h4>
   <%= timeline.initial_zoom %>
 </p>
-
+<!-- Для выдвигающегося окна сбоку
 <div class="btn-group">
-<a class="btn dropdown-toggle" data-toggle="dropdown"> Тайм Лайн <span class="caret"></span></a>
+<a class="btn dropdown-toggle" data-toggle="dropdown"> Таймлайн <span class="caret"></span></a>
   <ul class="dropdown-menu">
 
     <li><a data-toggle="modal" href="#Edit_Timeline" class="" data-remote='false'>Редактировать</a></li>
@@ -23,6 +23,8 @@
   </ul>
 </div>
 
+
+
 <div class="btn-group">
 <a class="btn dropdown-toggle" data-toggle="dropdown"> События <span class="caret"></span></a>
   <ul class="dropdown-menu pull-right">
@@ -32,18 +34,17 @@
 </div>
 
 
-
  <div id="Edit_Timeline" class="modal hide fade" tabindex="10" role="dialog" aria-labelledby="Edit_Timeline_label" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3 id="Edit_Timeline_label">Редактирование ТаймЛайна</h3>
+    <h3 id="Edit_Timeline_label">Редактирование Таймлайна</h3>
   </div>
   <div class="modal-body">
     <%= render :partial => 'timelines/form' %>
   </div>
 </div>
-
-
+-->
+<!-- 
 <div id="Add_Item" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Add_Item_label" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -67,7 +68,7 @@
     <%= render :partial => 'time_points/form' %>
   </div>
 </div>
- 
+  -->
 
 
 

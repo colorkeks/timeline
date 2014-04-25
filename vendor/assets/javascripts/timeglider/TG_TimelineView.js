@@ -1189,7 +1189,7 @@ tg.TG_TimelinePlayer.prototype = {
 
 		$(CONTAINER + " .timeglider-event-spanning").each(
 			function() {
-			    // !TODO  needs optimizing of DOM "touching"
+			   // !TODO  needs optimizing of DOM "touching"
 			    var $spev = $(this);
 			 	toff = $spev.offset().left - mo;
 				$elem = $spev.find(".timeglider-event-title");
@@ -4252,7 +4252,5 @@ tg.googleMapsLoad = function () {
 	}
 	
 }
-
-
 
 })(timeglider);

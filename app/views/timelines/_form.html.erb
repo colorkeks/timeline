@@ -5,16 +5,27 @@
       <%= f.text_field :title, :class => 'text_field' %>
     </div>
   </div>
+
+
   <div class="control-group">
-    <%= f.label :Фокусировка, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.date_select :focus_date, :class => 'date_select' %>
-    </div>
+     <div class="field">
+        <%= f.label :Фокусировка, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :focus_date, 'data-behaviour' => 'datepicker' %><br />
+        </div>
+     </div>  
   </div>
+
   <div class="control-group">
-    <%= f.label :Зум, :class => 'control-label' %>
+    <%= f.label :Зум, :class => 'control-label'%> 
     <div class="controls">
-      <%= f.text_field :initial_zoom, :class => 'text_field' %>
+      <%= f.select(:initial_zoom, options_for_select([['14 лет', 40],
+                                                     ['7 лет', 37],
+                                                     ['год', 30],
+                                                     ['пол года', 26],
+                                                     ['3 месяца', 23],
+                                                     ['месяц', 19],
+                                                     ['неделя',14]]), {}, {class: "text_field"}) %>
     </div>
   </div>
 

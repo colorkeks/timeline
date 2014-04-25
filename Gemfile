@@ -5,7 +5,11 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-sass'
 gem 'thin'
-gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+gem 'bootstrap-datepicker-rails'
+gem 'bootstrap-select-rails'
+gem 'select2-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 

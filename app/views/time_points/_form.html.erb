@@ -13,26 +13,44 @@
     </div>
   </div>
 
+
   <div class="control-group">
-    <%= f.label :Дата_начала, :class => 'control-label' %>
+     <div class="field">
+        <%= f.label :Дата_начала, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :start_date, 'data-behaviour' => 'datepicker' %><br />
+        </div>
+     </div>  
+  </div>
+
+
+  <div class="control-group">
+    <%= f.label :Максимальный_порог, :class => 'control-label'%> 
     <div class="controls">
-      <%= f.date_select :start_date, :class => 'date_select' %>
+      <%= f.select(:high_threshold, options_for_select([['14 лет', 40],
+                                                     ['7 лет', 37],
+                                                     ['3 года', 34],
+                                                     ['год', 30],
+                                                     ['пол года', 26],
+                                                     ['3 месяца', 23],
+                                                     ['месяц', 19],
+                                                     ['неделя',14]]), {}, {class: "text_field"}) %>
     </div>
   </div>
 
-  <div class="control-group">
-    <%= f.label :Максимальный_порог, :class => 'control-label' %>
+
+    <div class="control-group">
+    <%= f.label :Важность, :class => 'control-label'%> 
     <div class="controls">
-      <%= f.number_field :high_threshold, :class => 'number_field' %>
+      <%= f.select(:importance, options_for_select([['огромный', 80],
+                                                     ['большой', 60],
+                                                     ['стандартный', 50],
+                                                     ['не большой', 40],
+                                                     ['маленький', 30],
+                                                     ['крошечный', 20]]), {}, {class: "text_field"}) %>
     </div>
   </div>
 
-  <div class="control-group">
-    <%= f.label :Важность, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :importance, :class => 'number_field' %>
-    </div>
-  </div>
   
   <% if @timeline %>
     <%= f.hidden_field :timeline_id, value: @timeline.id %>

@@ -31,10 +31,62 @@
 // @linkColor: #ff0000;
 
 
-.tg-timeline-envelope > div {margin-left: 0px;}
-
 [class*="span"] {
     margin-left: 0px;
+}
+
+
+.timeglider-event-title {
+    line-height:100% 
+}
+
+
+
+
+@media print {
+
+
+    .timeglider-centerline { 
+          display: none
+    }
+
+    .timeglider-slider-container {
+          display: none
+    }
+
+    .timeglider-event-spanner{
+           
+         }
+
+    #buttons_1{
+          display:none
+    }
+    
+    .tg-prevnext {
+          display:none
+    }
+
+    .tg-date-display {
+          display:none
+    }
+
+    .tg-modal{
+          display:none
+    }
+
+    .timeglider-container{
+          border: none    
+    }
+
+    .timeglider-event-spanner{
+          border: 1px dotted black;
+    }
+
+    .tg-tick-body{
+          border: 1px solid black;
+    }
+    
+
 }
 
 
