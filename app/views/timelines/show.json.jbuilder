@@ -20,12 +20,8 @@ json.events  @timeline.all_items do |item|
   json.enddate "#{item.end_date} 12:00:00" if item.respond_to?(:end_date)
   json.high_threshold "#{item.high_threshold}"
   json.importance "#{item.importance}"
+  json.icon "#{item.image}.svg"
 
-  if item.respond_to?(:end_date)
-    json.icon "event.png"
-  else 
-    json.icon "flag.svg"
-  end
 
 end
 

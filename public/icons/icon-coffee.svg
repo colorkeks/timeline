@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   width="150"
+   height="130"
+   viewBox="0 0 150 130"
+   enable-background="new 0 0 216 146"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="icon-coffee.svg"><metadata
+   id="metadata13"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs11" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview9"
+   showgrid="false"
+   inkscape:zoom="1.4305556"
+   inkscape:cx="108"
+   inkscape:cy="73"
+   inkscape:window-x="65"
+   inkscape:window-y="24"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Capa_1" />
+<g
+   id="g3"
+   transform="matrix(0.7873535,0,0,0.78672345,-9.8886541,9.0059747)">
+	<path
+   d="m 38.503,124.246 c 4.074,4.074 8.989,6.111 14.747,6.111 h 104.286 c 5.758,0 10.674,-2.037 14.747,-6.111 4.072,-4.073 6.109,-8.989 6.109,-14.746 h -146 c 10e-4,5.757 2.038,10.673 6.111,14.746 z"
+   id="path5"
+   inkscape:connector-curvature="0" />
+	<path
+   d="m 71.5,99.071 h 57.357 c 4.996,0 9.287,-1.792 12.873,-5.377 3.584,-3.585 5.377,-7.876 5.377,-12.873 v -2.607 h 5.213 c 8.637,0 16.011,-3.055 22.121,-9.165 6.109,-6.111 9.166,-13.484 9.166,-22.12 0,-8.637 -3.057,-16.011 -9.166,-22.121 -6.11,-6.11 -13.484,-9.166 -22.121,-9.166 H 58.464 c -1.412,0 -2.634,0.517 -3.666,1.548 -1.032,1.032 -1.548,2.255 -1.548,3.667 v 59.964 c 0,4.997 1.792,9.288 5.377,12.873 3.585,3.585 7.876,5.377 12.873,5.377 z m 75.607,-67.785 h 5.215 c 4.345,0 8.039,1.521 11.08,4.562 3.041,3.042 4.562,6.735 4.562,11.081 0,4.344 -1.521,8.038 -4.562,11.081 -3.041,3.041 -6.735,4.562 -11.08,4.562 h -5.215 V 31.286 z"
+   id="path7"
+   inkscape:connector-curvature="0" />
+</g>
+</svg>

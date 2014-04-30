@@ -7,6 +7,7 @@ class CreateTimeItems < ActiveRecord::Migration
       t.date :end_date
       t.integer :high_threshold
       t.integer :importance
+      t.string :image
       t.integer :timeline_id
 
       t.timestamps

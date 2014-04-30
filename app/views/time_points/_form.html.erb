@@ -23,6 +23,8 @@
      </div>  
   </div>
 
+ 
+
 
   <div class="control-group">
     <%= f.label :Максимальный_порог, :class => 'control-label'%> 
@@ -34,7 +36,8 @@
                                                      ['пол года', 26],
                                                      ['3 месяца', 23],
                                                      ['месяц', 19],
-                                                     ['неделя',14]]), {}, {class: "text_field"}) %>
+                                                     ['неделя',12],
+                                                     ['3 дня',9]], @time_point.high_threshold ), {}, {class: "text_field"}) %>
     </div>
   </div>
 
@@ -47,9 +50,28 @@
                                                      ['стандартный', 50],
                                                      ['не большой', 40],
                                                      ['маленький', 30],
-                                                     ['крошечный', 20]]), {}, {class: "text_field"}) %>
+                                                     ['крошечный', 20]], @time_point.importance ), {}, {class: "text_field"}) %>
     </div>
   </div>
+
+  <div class="control-group">
+    <%= f.label :Иконка, :class => 'control-label'%>
+   <div class="controls">
+    <%= f.hidden_field :image, id:"PickImage1" %>
+  </div>
+</div>
+
+
+  <script>
+    var icons6 = [ "icon-flag", "icon-exchange", "icon-legal","icon-exclamation", "icon-music", "icon-picture", "icon-keyboard",  "icon-android", "icon-anchor", "icon-bitbucket", "icon-search", "icon-heart", "icon-archive", "icon-book", "icon-bell", "icon-bitcoin", "icon-beaker", "icon-apple", "icon-ambulance", "icon-barcode", "icon-bug", "icon-camera", "icon-calendar", "icon-cloud", "icon-check", "icon-cogs", "icon-cog", "icon-coffee", "icon-comment", "icon-cut", "icon-compass", "icon-copy", "icon-facebook", "icon-edit", "icon-gamepad", "icon-gift", "icon-fire", "icon-github", "icon-film", "icon-hospital", "icon-group", "icon-instagram", "icon-linux", "icon-medkit", "icon-money", "icon-list", "icon-microphone", "icon-plane", "icon-plus", "icon-minus", "icon-print", "icon-question", "icon-refresh", "icon-renren", "icon-rss", "icon-road", "icon-save", "icon-share", "icon-sitemap", "icon-skype", "icon-shield", "icon-suitcase", "icon-stethoscope", "icon-phone", "icon-twitter", "icon-umbrella", "icon-trophy", "icon-vk", "icon-windows", "icon-youtube", "icon-trash", "icon-euro", "icon-female", "icon-male", "icon-envelope", "icon-magic"   ],
+      example6 = $('#PickImage1').fontIconPicker({
+      emptyIcon: true,
+      source: icons6,
+      iconsPerPage: 20
+    });
+  </script> 
+
+ 
 
   
   <% if @timeline %>
@@ -64,6 +86,6 @@
   <% end %>
 
   <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= f.submit nil, :class => 'btn btn-primary' %> 
   </div>
 <% end %>

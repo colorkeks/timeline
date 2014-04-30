@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   width="150"
+   height="130"
+   viewBox="0 0 150 130"
+   enable-background="new 0 0 216 146"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="icon-camera.svg"><metadata
+   id="metadata13"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs11" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview9"
+   showgrid="false"
+   inkscape:zoom="1.4305556"
+   inkscape:cx="108"
+   inkscape:cy="73"
+   inkscape:window-x="65"
+   inkscape:window-y="24"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Capa_1" />
+<g
+   id="g3"
+   transform="matrix(0.79890943,0,0,0.75422488,-13.233675,11.028962)">
+	<path
+   d="m 177.945,13.483 c -2.036,-2.036 -4.494,-3.055 -7.373,-3.055 H 45.429 c -2.879,0 -5.337,1.02 -7.374,3.055 C 36.019,15.52 35,17.978 35,20.857 v 104.286 c 0,2.879 1.018,5.336 3.055,7.373 2.038,2.037 4.495,3.056 7.374,3.056 H 170.57 c 2.88,0 5.338,-1.019 7.375,-3.056 2.035,-2.037 3.055,-4.494 3.055,-7.373 V 20.857 c 0,-2.878 -1.02,-5.336 -3.055,-7.374 z M 55.857,15.642 H 87.143 V 26.071 H 55.857 V 15.642 z M 170.572,125.143 H 45.429 v -10.429 h 125.143 v 10.429 z M 76.714,78.377 c 0,-8.636 3.056,-16.01 9.166,-22.12 6.111,-6.11 13.484,-9.165 22.12,-9.165 8.637,0 16.01,3.055 22.12,9.165 6.11,6.11 9.165,13.484 9.165,22.12 0,8.637 -3.055,16.01 -9.165,22.12 -6.11,6.11 -13.483,9.166 -22.12,9.166 -8.636,0 -16.009,-3.056 -22.12,-9.166 -6.111,-6.11 -9.166,-13.483 -9.166,-22.12 z m 93.858,-46.276 v 9.613 H 45.429 V 31.286 h 52.47 l 5.214,-10.428 h 67.459 v 11.243 z"
+   id="path5"
+   inkscape:connector-curvature="0" />
+	<path
+   d="m 122.746,93.124 c 4.074,-4.074 6.111,-8.989 6.111,-14.747 0,-5.757 -2.037,-10.673 -6.111,-14.746 -4.073,-4.074 -8.988,-6.111 -14.746,-6.111 -5.758,0 -10.673,2.037 -14.747,6.111 -4.073,4.073 -6.11,8.989 -6.11,14.746 0,5.758 2.036,10.673 6.11,14.747 4.074,4.073 8.99,6.11 14.747,6.11 5.758,0 10.673,-2.037 14.746,-6.11 z m -20.287,-20.45 c -1.521,1.521 -2.281,3.368 -2.281,5.54 0,0.761 -0.244,1.386 -0.733,1.874 -0.489,0.489 -1.113,0.733 -1.874,0.733 -0.761,0 -1.385,-0.244 -1.874,-0.733 -0.489,-0.488 -0.733,-1.113 -0.733,-1.874 0,-3.585 1.276,-6.653 3.829,-9.206 2.553,-2.553 5.622,-3.829 9.207,-3.829 0.76,0 1.385,0.244 1.874,0.733 0.489,0.488 0.733,1.113 0.733,1.873 0,0.761 -0.244,1.386 -0.734,1.875 -0.489,0.489 -1.114,0.733 -1.874,0.733 -2.173,0 -4.019,0.76 -5.54,2.281 z"
+   id="path7"
+   inkscape:connector-curvature="0" />
+</g>
+</svg>

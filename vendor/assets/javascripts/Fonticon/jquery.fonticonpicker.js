@@ -18,7 +18,7 @@
             source:         false,      // Icons source
             emptyIcon:      true,       // Empty icon should be shown?
             iconsPerPage:   20,         // Number of icons per page
-            hasSearch:      true        // Is search enabled?
+            hasSearch:      false        // Is search enabled?
         };
 
     // The actual plugin constructor

@@ -1208,9 +1208,7 @@ tg.TG_TimelinePlayer.prototype = {
 							$elem.css({marginLeft:(sw - tw) - 5});
 						}
 					// otherwise just keep it aligned on the left side of the span
-					} else {
-						$elem.css({marginLeft:5});
-					}
+					} 
 				} 
 				// is offscreen == false: $(this).removeClass('timeglider-event-offscreen')
 			}

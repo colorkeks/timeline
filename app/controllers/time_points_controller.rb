@@ -69,6 +69,6 @@ class TimePointsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def time_point_params
-      params.require(:time_point).permit(:title, :description, :start_date, :high_threshold, :importance, :timeline_id)
+      params.require(:time_point).permit(:title, :description, :start_date, :high_threshold, :importance, :image, :timeline_id)
     end
 end

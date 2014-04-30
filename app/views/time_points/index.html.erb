@@ -12,6 +12,7 @@
       <th><%= model_class.human_attribute_name(:Дата_начала) %></th>
       <th><%= model_class.human_attribute_name(:Максимальный_порог) %></th>
       <th><%= model_class.human_attribute_name(:Важность) %></th>
+      <th><%= model_class.human_attribute_name(:Иконка) %></th>
       <th><%= model_class.human_attribute_name(:timeline_id) %></th>
       <th><%=t '.Действия', :default => t("helpers.Действия") %></th>
     </tr>
@@ -25,6 +26,7 @@
         <td><%= time_point.start_date %></td>
         <td><%= time_point.high_threshold %></td>
         <td><%= time_point.importance %></td>
+        <td><%= time_point.image %></td>
         <td><%= time_point.timeline_id %></td>
         <td>
           <%= link_to t('.редакт.', :default => t("helpers.links.редакт.")),

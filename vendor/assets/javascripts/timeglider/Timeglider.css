@@ -737,24 +737,26 @@
 }
 
 .tg-image-lane-pull {
-	position:absolute;
+	display: none;
+	/*position:absolute;
 	height:1px;
 	top:24px;
 	width:100%;
 	background-color:white;
 	border-bottom:2px solid #CCC;
 	cursor:ns-resize;
-	z-index:100;
+	z-index:100;*/
 }
 
 .tg-image-lane-bg {
-	position:absolute;
+	display: none;
+	/*position:absolute;
 	top:-450px;
 	height:450px;
 	width:100%;
 	background-color:#ebe6db;
 	z-index:99;
-	opacity:.3;
+	opacity:.3;*/
 }
 
 .timeglider-event-image-lane {
@@ -1126,7 +1128,7 @@
 	margin-top:-2px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
-	border-radius:3px;
+	border-radius:10px;
 	
 }
 

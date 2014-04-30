@@ -38,7 +38,7 @@
 //= require inc/mbExtruder.js
 //= require twitter/bootstrap
 //= require bootstrap-datepicker
-//= require Fonticon/jquery.fonticonpicker.min.js
+//= require Fonticon/jquery.fonticonpicker.js
 //= require_tree .
 
 

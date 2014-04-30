@@ -12,7 +12,7 @@
     <div class='btn-group'>
       <a data-toggle="modal" href="#Edit_Timeline" class="btn btn-inverse" data-remote='false'><i class="icon-pencil"></i></a>
       <a data-toggle="modal" href="#Add_Point" class="btn btn-inverse" data-remote='false'><i class="icon-flag"></i></a>
-      <a data-toggle="modal" href="#Add_Item" class="btn btn-inverse" data-remote='false'><i class="icon-minus"></i></a>
+      <a data-toggle="modal" href="#Add_Item" class="btn btn-inverse" data-remote='false'><i class="icon-exchange"></i></a>
       <a class="btn btn-inverse" href="javaScript:window.print();"><i class="icon-print"></i></a>
 
     </div>
@@ -137,11 +137,11 @@
 
     tg1 = $("#p1").timeline({
 
-        "min_zoom":14, 
+        "min_zoom":9, 
         "max_zoom":40, 
         "icon_folder":"http://localhost:3000/icons/",
         "data_source":"http://localhost:3000/timelines/<%=@timeline.id%>.json",
-        "show_footer":false,
+        "show_footer":true,
         "display_zoom_level":true,
         "mousewheel":"zoom", // zoom | pan | none
         "constrain_to_data":false,

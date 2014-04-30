@@ -6,6 +6,7 @@ class CreateTimePoints < ActiveRecord::Migration
       t.date :start_date
       t.integer :high_threshold
       t.integer :importance
+      t.string :image
       t.integer :timeline_id
 
       t.timestamps

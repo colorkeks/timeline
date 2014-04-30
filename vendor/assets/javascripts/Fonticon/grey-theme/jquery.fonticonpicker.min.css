@@ -44,16 +44,16 @@
 	              .selector-popup{position:absolute;
 	              	              z-index:10000;
 	              	              background-color:#fefefe;
-	              	              padding:5px;-moz-box-shadow:0 1px 1px rgba(0,0,0,.04);
+	              	              padding-top:0px;-moz-box-shadow:0 1px 1px rgba(0,0,0,.04);
 	              	              -webkit-box-shadow:0 1px 1px rgba(0,0,0,.04);
 	              	              box-shadow:0 1px 1px rgba(0,0,0,.04);
 	              	              height:auto;
 	              	              width:342px;
 	              	              border:1px solid #E5E5E5;
-	              	              margin-top:-1px}.icons-selector 
+	              	              margin-top:-254px}.icons-selector 
 
 	              .selector-search input[type=text]{line-height:20px;
-	              	                                padding:10px 2.5%;
+
 	              	                                width:100%;
 	              	                                border:1px solid #EDEDED;
 	              	                                -moz-box-sizing:border-box;
@@ -65,7 +65,8 @@
 	              	                                box-shadow:none;
 	              	                                -moz-box-shadow:none;
 	              	                                -webkit-box-shadow:none;
-	              	                                outline:0}.icons-selector
+	              	                                outline:0;
+	              	                                display: none;}.icons-selector
 
 	              input::-webkit-input-placeholder{color:#ddd;
 	              	                               text-transform:uppercase}.icons-selector
@@ -88,7 +89,7 @@
 	              	                   -moz-box-sizing:border-box;
 	              	                   -webkit-box-sizing:border-box;
 	              	                   box-sizing:border-box;
-	              	                   padding:5px}.icons-selector 
+	              	                   padding-top:5px}.icons-selector 
 
 	              .fip-icons-container .loading{color:#eee;
 	              	                            font-size:24px;
@@ -150,8 +151,6 @@
 	              	                                                                     line-height:1em;
 	              	                                                                     margin-left:.2em}.icons-selector 
 
-	              .fip-icon-search:before{content:'\e812';
-	                                      cursor:default}.icons-selector 
 
 	              .fip-icon-cancel:before{content:'\e814';
 	                                      cursor:pointer}.icons-selector 
@@ -159,9 +158,9 @@
 	              .fip-icon-block:before{content:'\e84e';
 	                                     color:#fed0d0}.icons-selector 
 
-	              .fip-icon-down-dir:before{content:'\e800'}.icons-selector 
+	              .fip-icon-down-dir:before{content:'\e813'}.icons-selector 
 
-	              .fip-icon-up-dir:before{content:'\e813'}.icons-selector 
+	              .fip-icon-up-dir:before{content:'\e800'}.icons-selector 
 
 	              .fip-icon-left-dir:before{content:'\e801'}.icons-selector 
 

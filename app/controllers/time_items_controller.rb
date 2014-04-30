@@ -69,6 +69,6 @@ class TimeItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def time_item_params
-      params.require(:time_item).permit(:title, :description, :start_date, :end_date, :high_threshold, :importance, :timeline_id)
+      params.require(:time_item).permit(:title, :description, :start_date, :end_date, :high_threshold, :importance, :image, :timeline_id)
     end
 end
