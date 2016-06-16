@@ -28,6 +28,24 @@
 }
 
 #p1 {
-    height:563px;
+    height:650px;
 }
 
+.custom {
+  .modal.fade.in{
+    top: 40px;
+  }
+
+  .form-actions{
+    padding: 19px 20px 0;
+  }
+
+  .modal-body{
+    max-height: 500px;
+  }
+
+  .modal{
+    width: 560px;
+  }
+
+}

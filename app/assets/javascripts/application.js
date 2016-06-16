@@ -50,5 +50,3 @@ $(document).on("focus", "[data-behaviour~='datepicker']", function(e){
     	language: "ru"
     })
 });
-
-

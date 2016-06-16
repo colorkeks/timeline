@@ -549,7 +549,7 @@ timeglider.TG_Date = {};
 
   };
 
-	TG_Date.monthNamesLet = ["","J","F","M","A","M","J","J","A","S","O","N","D"];
+	TG_Date.monthNamesLet = ["","Я","Ф","М","А","М","И","И","А","С","О","Н","Д"];
 
     TG_Date.monthsDayNums = [0,31,28,31,30,31,30,31,31,30,31,30,31,29];
   
